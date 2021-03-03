@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+}
+
+.background {
+  width: 100%;
+  height: 95vh;
+  background-image: url("/Game/carrot/img/background.png");
+  background-size: cover;
+  background-position: 50% 0%;
+}
+.controller {
+  padding: 10px;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  background-color: chocolate;
+  border: 3px solid black;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.progress:active {
+  transform: scale(0.9, 0.9);
+}
+
+.timeBox {
+  border: 3px solid black;
+  width: 130px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.field {
+  position: absolute;
+  bottom: 0;
+  width: 98vw;
+  height: 40vh;
+  z-index: 1;
+}
+
+.regame {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 150px;
+  background-color: rgba(15, 15, 15, 0.5);
+  border-radius: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.regame button {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  background-color: chocolate;
+  border: 3px solid black;
+  font-size: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regame div {
+  font-size: 50px;
+  color: white;
+}
+
+.field img {
+  position: absolute;
+}
